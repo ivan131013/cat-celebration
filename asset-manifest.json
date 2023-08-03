@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ivan131013.github.io/cat-celebration/static/css/main.a3887502.css",
-    "main.js": "/ivan131013.github.io/cat-celebration/static/js/main.d05f599b.js",
-    "static/media/IMG_9834.HEIC": "/ivan131013.github.io/cat-celebration/static/media/IMG_9834.bc771f3ce32270516f5a.HEIC",
-    "static/media/IMG_20230622_163611573.jpg": "/ivan131013.github.io/cat-celebration/static/media/IMG_20230622_163611573.05c02fad3053d9619309.jpg",
-    "static/media/IMG_20230729_180332417.jpg": "/ivan131013.github.io/cat-celebration/static/media/IMG_20230729_180332417.78b8a78f0c05891d5902.jpg",
-    "static/media/IMG_20230702_150304950.jpg": "/ivan131013.github.io/cat-celebration/static/media/IMG_20230702_150304950.8c65f32ee5ee819decaa.jpg",
-    "static/media/IMG_8578.jpg": "/ivan131013.github.io/cat-celebration/static/media/IMG_8578.9896e6560918b9a81a91.jpg",
-    "static/media/IMG_0134.jpg": "/ivan131013.github.io/cat-celebration/static/media/IMG_0134.01100444c5844890e992.jpg",
-    "static/media/IMG_0733.jpg": "/ivan131013.github.io/cat-celebration/static/media/IMG_0733.c76dd3813854c271f2da.jpg",
-    "static/media/IMG_20230706_163626610.jpg": "/ivan131013.github.io/cat-celebration/static/media/IMG_20230706_163626610.e51bb7ee5b5e47fb33c3.jpg",
-    "index.html": "/ivan131013.github.io/cat-celebration/index.html",
-    "main.a3887502.css.map": "/ivan131013.github.io/cat-celebration/static/css/main.a3887502.css.map",
-    "main.d05f599b.js.map": "/ivan131013.github.io/cat-celebration/static/js/main.d05f599b.js.map"
+    "main.css": "/cat-celebration/static/css/main.a3887502.css",
+    "main.js": "/cat-celebration/static/js/main.02efa18d.js",
+    "static/media/IMG_9834.HEIC": "/cat-celebration/static/media/IMG_9834.bc771f3ce32270516f5a.HEIC",
+    "static/media/IMG_20230622_163611573.jpg": "/cat-celebration/static/media/IMG_20230622_163611573.05c02fad3053d9619309.jpg",
+    "static/media/IMG_20230729_180332417.jpg": "/cat-celebration/static/media/IMG_20230729_180332417.78b8a78f0c05891d5902.jpg",
+    "static/media/IMG_20230702_150304950.jpg": "/cat-celebration/static/media/IMG_20230702_150304950.8c65f32ee5ee819decaa.jpg",
+    "static/media/IMG_8578.jpg": "/cat-celebration/static/media/IMG_8578.9896e6560918b9a81a91.jpg",
+    "static/media/IMG_0134.jpg": "/cat-celebration/static/media/IMG_0134.01100444c5844890e992.jpg",
+    "static/media/IMG_0733.jpg": "/cat-celebration/static/media/IMG_0733.c76dd3813854c271f2da.jpg",
+    "static/media/IMG_20230706_163626610.jpg": "/cat-celebration/static/media/IMG_20230706_163626610.e51bb7ee5b5e47fb33c3.jpg",
+    "index.html": "/cat-celebration/index.html",
+    "main.a3887502.css.map": "/cat-celebration/static/css/main.a3887502.css.map",
+    "main.02efa18d.js.map": "/cat-celebration/static/js/main.02efa18d.js.map"
   },
   "entrypoints": [
     "static/css/main.a3887502.css",
-    "static/js/main.d05f599b.js"
+    "static/js/main.02efa18d.js"
   ]
 }
