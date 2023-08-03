@@ -8,7 +8,7 @@ import CustomCursor from "./features/customCursor/components/CustomCursor";
 const router = createBrowserRouter([
   {
     path: "/",
-
+    exact: true,
     element: (
       <DefaultLayout>
         <Main />
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <ChakraProvider>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} basename={process.env.PUBLIC_URL} />
       <CustomCursor />
     </ChakraProvider>
   );
