@@ -38,6 +38,7 @@ const BallsPresent = () => {
                 Math.floor(Math.random() * catHumiliationPhrases.length)
               ]
             }
+            :
           </Heading>
           <CountdownTimer />
         </VStack>
