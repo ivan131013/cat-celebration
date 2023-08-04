@@ -1,8 +1,8 @@
 {
   "name": "no-balls-countdown",
-  "homepage": "https://ivan131013.github.io/cat-celebration/",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ivan131013.github.io/cat-celebration",
   "dependencies": {
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",

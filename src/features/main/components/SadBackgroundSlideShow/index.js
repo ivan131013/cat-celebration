@@ -1,10 +1,11 @@
 import { Box } from "@chakra-ui/react";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import { shuffle } from "../../../../services/functions/array";
 
 const SadBackgroundSlideShow = () => {
   const images = require.context("../../../../assets/slides", true);
-  const imageList = images.keys().map((image) => images(image));
+  const imageList = shuffle(images.keys().map((image) => images(image)));
 
   return (
     <Box

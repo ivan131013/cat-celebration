@@ -12,7 +12,7 @@ export default function useMousePosition() {
       const { clientX, clientY } = event;
 
       const angle = Math.atan(
-        (mousePosition.y - clientY) / (mousePosition.x - clientX)
+        (clientY - mousePosition.y) / (clientX - mousePosition.x)
       );
 
       setMousePosition({ x: clientX, y: clientY, angle });

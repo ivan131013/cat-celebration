@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import Main from "./pages/Main";
 import DefaultLayout from "./UI/layouts/DefaultLayout";
 import "./UI/fonts/fonts.css";
 import CustomCursor from "./features/customCursor/components/CustomCursor";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     exact: true,
@@ -24,7 +24,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <ChakraProvider>
-      <RouterProvider router={router} basename={process.env.PUBLIC_URL} />
+      <RouterProvider
+        router={router}
+      />
       <CustomCursor />
     </ChakraProvider>
   );
