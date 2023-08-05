@@ -1,1 +1,1 @@
-export const noBallsDate = new Date("2023-08-08T12:00");
+export const noBallsDate = new Date("2023-08-05T03:21:00");
