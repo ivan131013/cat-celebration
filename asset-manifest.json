@@ -1,26 +1,37 @@
 {
   "files": {
     "main.css": "/cat-celebration/static/css/main.ad8cefad.css",
-    "main.js": "/cat-celebration/static/js/main.1d917273.js",
+    "main.js": "/cat-celebration/static/js/main.fa9925a8.js",
     "static/media/bgCat.gif": "/cat-celebration/static/media/bgCat.dac74a1370f27e56f4ad.gif",
     "static/media/banger2.mp3": "/cat-celebration/static/media/banger2.601ee5b473b3eb35dcca.mp3",
-    "static/media/IMG_9834.HEIC": "/cat-celebration/static/media/IMG_9834.bc771f3ce32270516f5a.HEIC",
     "static/media/IMG_20230622_163611573.jpg": "/cat-celebration/static/media/IMG_20230622_163611573.05c02fad3053d9619309.jpg",
     "static/media/IMG_20230729_180332417.jpg": "/cat-celebration/static/media/IMG_20230729_180332417.78b8a78f0c05891d5902.jpg",
     "static/media/IMG_20230702_150304950.jpg": "/cat-celebration/static/media/IMG_20230702_150304950.8c65f32ee5ee819decaa.jpg",
+    "static/media/IMG_3767.jpg": "/cat-celebration/static/media/IMG_3767.4ea4ec12b4f76617f31c.jpg",
+    "static/media/IMG_0532.jpg": "/cat-celebration/static/media/IMG_0532.55be60cae71147f91fe7.jpg",
     "static/media/IMG_8578.jpg": "/cat-celebration/static/media/IMG_8578.9896e6560918b9a81a91.jpg",
+    "static/media/IMG_6665.jpg": "/cat-celebration/static/media/IMG_6665.059443451f53b4efb3c8.jpg",
+    "static/media/IMG_8465.jpg": "/cat-celebration/static/media/IMG_8465.b84def80017e7e4f84ce.jpg",
+    "static/media/IMG_6766.jpg": "/cat-celebration/static/media/IMG_6766.a18439f75fe463d6f3d8.jpg",
+    "static/media/IMG_6902.jpg": "/cat-celebration/static/media/IMG_6902.bba12d4a541df0f74909.jpg",
+    "static/media/IMG_8471.jpg": "/cat-celebration/static/media/IMG_8471.a6b172af79b10acb2255.jpg",
     "static/media/IMG_0134.jpg": "/cat-celebration/static/media/IMG_0134.01100444c5844890e992.jpg",
+    "static/media/IMG_0735.jpg": "/cat-celebration/static/media/IMG_0735.bdbb0d8cd0087dcd4245.jpg",
+    "static/media/IMG_20230705_125724665_BURST001_COMP.jpg": "/cat-celebration/static/media/IMG_20230705_125724665_BURST001_COMP.bfaf507898f1f3aa4b40.jpg",
     "static/media/IMG_0733.jpg": "/cat-celebration/static/media/IMG_0733.c76dd3813854c271f2da.jpg",
+    "static/media/IMG_20230329_113333877.jpg": "/cat-celebration/static/media/IMG_20230329_113333877.482d915b01b72b5be784.jpg",
+    "static/media/IMG_20230329_113225284.jpg": "/cat-celebration/static/media/IMG_20230329_113225284.e09dcb6f9634ab8800a9.jpg",
+    "static/media/IMG_0529.jpg": "/cat-celebration/static/media/IMG_0529.aae58935c8743c0f49b4.jpg",
     "static/media/giphy.gif": "/cat-celebration/static/media/giphy.80257ec1442ae7ff668d.gif",
     "static/media/IMG_20230706_163626610.jpg": "/cat-celebration/static/media/IMG_20230706_163626610.e51bb7ee5b5e47fb33c3.jpg",
     "static/media/cat-dance.gif": "/cat-celebration/static/media/cat-dance.6aa39e9c0680aa1e526c.gif",
     "static/media/chat-cat.gif": "/cat-celebration/static/media/chat-cat.fb3a2cd8ec1783ebe10f.gif",
     "index.html": "/cat-celebration/index.html",
     "main.ad8cefad.css.map": "/cat-celebration/static/css/main.ad8cefad.css.map",
-    "main.1d917273.js.map": "/cat-celebration/static/js/main.1d917273.js.map"
+    "main.fa9925a8.js.map": "/cat-celebration/static/js/main.fa9925a8.js.map"
   },
   "entrypoints": [
     "static/css/main.ad8cefad.css",
-    "static/js/main.1d917273.js"
+    "static/js/main.fa9925a8.js"
   ]
 }
