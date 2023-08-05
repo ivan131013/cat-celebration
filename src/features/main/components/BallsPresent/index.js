@@ -1,4 +1,12 @@
-import { VStack, Center, Heading, Button, Text, Box } from "@chakra-ui/react";
+import {
+  VStack,
+  Center,
+  Heading,
+  Button,
+  Text,
+  Box,
+  Tooltip,
+} from "@chakra-ui/react";
 import CountdownTimer from "../../../../features/main/components/CountdownTimer";
 import { noBallsDate } from "../../../../services/consts/consts";
 import SadBackgroundSlideShow from "../SadBackgroundSlideShow";
@@ -7,6 +15,7 @@ import RespectLetter from "../RespectLetter/RespectLetter";
 import { getPayRespect, postPayRespect } from "../../api/client";
 import LovelyFooter from "../LovelyFooter";
 import { useFCounter } from "../../hooks/useFCounter";
+import Warcrimes from "../Warcrimes";
 
 const catHumiliationPhrases = [
   "Кота буде зневажено за",
@@ -42,6 +51,10 @@ const BallsPresent = () => {
   }, []);
 
   const payRespect = async () => {
+    if (fCount === 0) {
+      return;
+    }
+    console.log("СОФІЮ НА ВИЛИ");
     try {
       setRespects((prevRespects) => [...prevRespects, "+F"]);
       await postPayRespect(fCount + 1);
@@ -83,18 +96,21 @@ const BallsPresent = () => {
         </VStack>
         <SadBackgroundSlideShow />
       </Center>
-      <Heading
-        color={"#fce062"}
-        fontSize={"2rem"}
-        zIndex={1000}
-        fontWeight={"500"}
-        fontFamily={"Rubik Dirt"}
-        top="1rem"
-        left="1rem"
-        position="fixed"
-      >
-        F counter: {fCount}
-      </Heading>
+      <Tooltip label={"Якшо Роман його ще раз обнулить я буду вбивати"}>
+        <Heading
+          color={"#fce062"}
+          fontSize={"2rem"}
+          zIndex={10000}
+          fontWeight={"500"}
+          fontFamily={"Rubik Dirt"}
+          top="1rem"
+          left="1rem"
+          position="fixed"
+        >
+          F counter: {fCount}
+        </Heading>
+      </Tooltip>
+      <Warcrimes rotationSpeed={respects.length} />
     </VStack>
   );
 };

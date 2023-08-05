@@ -34,7 +34,7 @@ const CountdownTimer = () => {
       fontWeight={"800"}
       color={"#faf4d9"}
       fontFamily={"Ubuntu Condensed"}
-      fontSize={{ base: "4rem", md: "6rem" }}
+      fontSize={{ base: "3.5rem", md: "6rem" }}
       textAlign={"center"}
       lineHeight={"1em"}
       
