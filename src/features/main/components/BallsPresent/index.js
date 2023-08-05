@@ -36,11 +36,9 @@ const BallsPresent = () => {
     );
   }, []);
 
-  const payRespect = throttle(() => {
+  const payRespect = () => {
     setRespects((prevRespects) => [...prevRespects, "+F"]);
-  }, 300);
-
-  const handleClick = useRef(payRespect);
+  };
 
   return (
     <VStack>
@@ -57,7 +55,7 @@ const BallsPresent = () => {
           <CountdownTimer />
           <Box mt='3rem' position="relative">
             <Button
-              onClick={handleClick.current}
+              onClick={payRespect}
               fontSize={"2rem"}
               fontWeight={"800"}
               color='black'
