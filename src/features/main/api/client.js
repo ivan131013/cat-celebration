@@ -1,10 +1,10 @@
-import { getDoc, setDoc, doc } from "firebase/firestore/lite";
+import { getDoc, setDoc, doc } from "firebase/firestore";
 import { db } from "../../../services/firebase/firebase";
 
 export const postPayRespect = (count) => {
-  return setDoc(doc(db, 'counter','respect'), { count: count})
+  return setDoc(doc(db, "counter", "respect"), { count: count });
 };
 
 export const getPayRespect = () => {
-  return getDoc(doc(db, 'counter','respect'))
+  return getDoc(doc(db, "counter", "respect"));
 };

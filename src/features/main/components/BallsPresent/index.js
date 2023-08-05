@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import RespectLetter from "../RespectLetter/RespectLetter";
 import { getPayRespect, postPayRespect } from "../../api/client";
 import LovelyFooter from "../LovelyFooter";
+import { useFCounter } from "../../hooks/useFCounter";
 
 const catHumiliationPhrases = [
   "Кота буде зневажено за",
@@ -28,40 +29,23 @@ const catHumiliationPhrases = [
 
 const BallsPresent = () => {
   const [respects, setRespects] = useState([]);
-  const [respectsGlobalCounter, setRespectsGlobalCounter] = useState(0);
+
+  const { fCount } = useFCounter();
 
   const [catBallsHeading, setCatBallsHeading] = useState("");
   useEffect(() => {
-    getPayRespect()
-      .then((response) => {
-        setRespectsGlobalCounter(response.data().count);
-      });
-
     setCatBallsHeading(
       catHumiliationPhrases[
         Math.floor(Math.random() * catHumiliationPhrases.length)
       ]
     );
-
-    const intervalId = setInterval(() => {
-      getPayRespect()
-        .then((response) => {
-          setRespectsGlobalCounter(response.data().count);
-        });
-    }, 10000);
-    return () => {
-      clearInterval(intervalId);
-    };
   }, []);
 
   const payRespect = async () => {
     try {
       setRespects((prevRespects) => [...prevRespects, "+F"]);
-      await postPayRespect(respectsGlobalCounter + 1)
-      const response = await getPayRespect();
-      setRespectsGlobalCounter(response.data().count)
+      await postPayRespect(fCount + 1);
     } catch (error) {}
-
   };
 
   return (
@@ -109,7 +93,7 @@ const BallsPresent = () => {
         left="1rem"
         position="fixed"
       >
-        F counter: {respectsGlobalCounter}
+        F counter: {fCount}
       </Heading>
     </VStack>
   );
