@@ -76,9 +76,10 @@ const BallsPresent = () => {
         <VStack zIndex={10}>
           <Heading
             color={"#fce062"}
-            fontSize={"3rem"}
+            fontSize={{ base: "2rem", md: "3rem" }}
             fontWeight={"500"}
             fontFamily={"Rubik Dirt"}
+            textAlign={"center"}
           >
             {catBallsHeading}:
           </Heading>

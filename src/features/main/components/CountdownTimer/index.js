@@ -31,10 +31,13 @@ const CountdownTimer = () => {
 
   return (
     <Heading
-      fontSize={"6rem"}
       fontWeight={"800"}
       color={"#faf4d9"}
       fontFamily={"Ubuntu Condensed"}
+      fontSize={{ base: "4rem", md: "6rem" }}
+      textAlign={"center"}
+      lineHeight={"1em"}
+      
     >
       {days} дні {hours} годин {minutes} хвилин {seconds} секунд
     </Heading>
