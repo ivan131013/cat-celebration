@@ -4,7 +4,9 @@ import { noBallsDate } from "../../../../services/consts/consts";
 import SadBackgroundSlideShow from "../SadBackgroundSlideShow";
 import { useEffect, useRef, useState } from "react";
 import RespectLetter from "../RespectLetter/RespectLetter";
-import { throttle } from "lodash";
+import { set, throttle } from "lodash";
+import { getPayRespect, postPayRespect } from "../../api/client";
+import LovelyFooter from "../LovelyFooter";
 
 const catHumiliationPhrases = [
   "Кота буде зневажено за",
@@ -27,22 +29,50 @@ const catHumiliationPhrases = [
 
 const BallsPresent = () => {
   const [respects, setRespects] = useState([]);
+  const [respectsGlobalCounter, setRespectsGlobalCounter] = useState(0);
+
   const [catBallsHeading, setCatBallsHeading] = useState("");
   useEffect(() => {
+    getPayRespect()
+      .then((response) => response.json())
+      .then((data) => {
+        setRespectsGlobalCounter(data);
+      });
+
     setCatBallsHeading(
       catHumiliationPhrases[
         Math.floor(Math.random() * catHumiliationPhrases.length)
       ]
     );
+
+    const intervalId = setInterval(() => {
+      getPayRespect()
+        .then((response) => response.json())
+        .then((data) => {
+          setRespectsGlobalCounter(data);
+        });
+    }, 10000);
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
 
   const payRespect = () => {
+    try {
+      postPayRespect()
+        .then((response) => response.json())
+        .then((data) => {
+          setRespectsGlobalCounter(data);
+        });
+    } catch (error) {}
+
     setRespects((prevRespects) => [...prevRespects, "+F"]);
   };
 
   return (
     <VStack>
       <Center h={"100vh"} bg={"#041529"} w={"100vw"}>
+        <LovelyFooter />
         <VStack zIndex={10}>
           <Heading
             color={"#fce062"}
@@ -53,12 +83,12 @@ const BallsPresent = () => {
             {catBallsHeading}:
           </Heading>
           <CountdownTimer />
-          <Box mt='3rem' position="relative">
+          <Box mt="3rem" position="relative">
             <Button
               onClick={payRespect}
               fontSize={"2rem"}
               fontWeight={"800"}
-              color='black'
+              color="black"
               fontFamily={"Ubuntu Condensed"}
               py="2rem"
               px="5rem"
@@ -83,7 +113,7 @@ const BallsPresent = () => {
         left="1rem"
         position="fixed"
       >
-        F counter: {respects.length}
+        F counter: {respectsGlobalCounter}
       </Heading>
     </VStack>
   );
