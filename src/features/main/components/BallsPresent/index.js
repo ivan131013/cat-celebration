@@ -48,16 +48,18 @@ const BallsPresent = () => {
         .then((response) => {
           setRespectsGlobalCounter(response.data().count);
         });
-    }, 200);
+    }, 10000);
     return () => {
       clearInterval(intervalId);
     };
   }, []);
 
-  const payRespect = () => {
+  const payRespect = async () => {
     try {
-      postPayRespect(respects.length + 1)
       setRespects((prevRespects) => [...prevRespects, "+F"]);
+      await postPayRespect(respectsGlobalCounter + 1)
+      const response = await getPayRespect();
+      setRespectsGlobalCounter(response.data().count)
     } catch (error) {}
 
   };
