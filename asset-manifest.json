@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cat-celebration/static/css/main.ad8cefad.css",
-    "main.js": "/cat-celebration/static/js/main.7012e587.js",
+    "main.js": "/cat-celebration/static/js/main.1d917273.js",
     "static/media/bgCat.gif": "/cat-celebration/static/media/bgCat.dac74a1370f27e56f4ad.gif",
     "static/media/banger2.mp3": "/cat-celebration/static/media/banger2.601ee5b473b3eb35dcca.mp3",
     "static/media/IMG_9834.HEIC": "/cat-celebration/static/media/IMG_9834.bc771f3ce32270516f5a.HEIC",
@@ -13,13 +13,14 @@
     "static/media/IMG_0733.jpg": "/cat-celebration/static/media/IMG_0733.c76dd3813854c271f2da.jpg",
     "static/media/giphy.gif": "/cat-celebration/static/media/giphy.80257ec1442ae7ff668d.gif",
     "static/media/IMG_20230706_163626610.jpg": "/cat-celebration/static/media/IMG_20230706_163626610.e51bb7ee5b5e47fb33c3.jpg",
+    "static/media/cat-dance.gif": "/cat-celebration/static/media/cat-dance.6aa39e9c0680aa1e526c.gif",
     "static/media/chat-cat.gif": "/cat-celebration/static/media/chat-cat.fb3a2cd8ec1783ebe10f.gif",
     "index.html": "/cat-celebration/index.html",
     "main.ad8cefad.css.map": "/cat-celebration/static/css/main.ad8cefad.css.map",
-    "main.7012e587.js.map": "/cat-celebration/static/js/main.7012e587.js.map"
+    "main.1d917273.js.map": "/cat-celebration/static/js/main.1d917273.js.map"
   },
   "entrypoints": [
     "static/css/main.ad8cefad.css",
-    "static/js/main.7012e587.js"
+    "static/js/main.1d917273.js"
   ]
 }
