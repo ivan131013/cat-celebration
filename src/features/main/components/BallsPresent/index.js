@@ -27,9 +27,9 @@ const catHumiliationPhrases = [
 
 const BallsPresent = () => {
   const [respects, setRespects] = useState([]);
-  const [catBallsHeading, setCayBallsHeading] = useState("");
+  const [catBallsHeading, setCatBallsHeading] = useState("");
   useEffect(() => {
-    setCayBallsHeading(
+    setCatBallsHeading(
       catHumiliationPhrases[
         Math.floor(Math.random() * catHumiliationPhrases.length)
       ]
