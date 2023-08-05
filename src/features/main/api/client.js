@@ -1,11 +1,10 @@
-export const postPayRespect = () => {
-  return fetch("https://balls-celebration.onrender.com/f", {
-    method: "POST",
-  });
+import { getDoc, setDoc, doc } from "firebase/firestore/lite";
+import { db } from "../../../services/firebase/firebase";
+
+export const postPayRespect = (count) => {
+  return setDoc(doc(db, 'counter','respect'), { count: count})
 };
 
 export const getPayRespect = () => {
-  return fetch("https://balls-celebration.onrender.com/f", {
-    method: "GET",
-  });
+  return getDoc(doc(db, 'counter','respect'))
 };

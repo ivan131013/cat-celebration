@@ -4,7 +4,6 @@ import { noBallsDate } from "../../../../services/consts/consts";
 import SadBackgroundSlideShow from "../SadBackgroundSlideShow";
 import { useEffect, useRef, useState } from "react";
 import RespectLetter from "../RespectLetter/RespectLetter";
-import { set, throttle } from "lodash";
 import { getPayRespect, postPayRespect } from "../../api/client";
 import LovelyFooter from "../LovelyFooter";
 
@@ -34,9 +33,8 @@ const BallsPresent = () => {
   const [catBallsHeading, setCatBallsHeading] = useState("");
   useEffect(() => {
     getPayRespect()
-      .then((response) => response.json())
-      .then((data) => {
-        setRespectsGlobalCounter(data);
+      .then((response) => {
+        setRespectsGlobalCounter(response.data().count);
       });
 
     setCatBallsHeading(
@@ -47,11 +45,10 @@ const BallsPresent = () => {
 
     const intervalId = setInterval(() => {
       getPayRespect()
-        .then((response) => response.json())
-        .then((data) => {
-          setRespectsGlobalCounter(data);
+        .then((response) => {
+          setRespectsGlobalCounter(response.data().count);
         });
-    }, 10000);
+    }, 200);
     return () => {
       clearInterval(intervalId);
     };
@@ -59,14 +56,10 @@ const BallsPresent = () => {
 
   const payRespect = () => {
     try {
-      postPayRespect()
-        .then((response) => response.json())
-        .then((data) => {
-          setRespectsGlobalCounter(data);
-        });
+      postPayRespect(respects.length + 1)
+      setRespects((prevRespects) => [...prevRespects, "+F"]);
     } catch (error) {}
 
-    setRespects((prevRespects) => [...prevRespects, "+F"]);
   };
 
   return (
